@@ -2,6 +2,8 @@ FROM alpine:latest
 
 LABEL author="D.Temuujin"
 
+EXPOSE 5000
+
 RUN apk update
 RUN apk add py-pip
 RUN apk add --no-cache python3-dev 

@@ -1,6 +1,8 @@
 FROM python:3.8-slim
 LABEL maintainer="D.Temuujin"
 
+EXPOSE 8888
+
 # refresh SSL certificates
 RUN apt-get update && apt-get install -y git curl jq ca-certificates && update-ca-certificates --fresh
 
